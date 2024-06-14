@@ -9,6 +9,7 @@
     --grayish-blue: hsl(229, 7%, 55%);
     --dark-blue: hsl(228, 56%, 26%);
     --very-dark-blue: hsl(229, 57%, 11%);
+    font-size: 16px;
 }
 
 body {
@@ -179,6 +180,54 @@ body {
 
     .storage-info_container {
         width: 50vw;
+    }
+
+    .storage-left_info {
+        top: -80px;
+        bottom: auto;
+        right: 40px;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .storage-left_info::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+        right: -10px;
+        background-color: #fff;
+        transform: skew(45deg);
+    }
+
+    .storage-left_info::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+        right: -20px;
+        background-color: var(--dark-blue);
+    }
+     .color {
+        position: relative;
+        width: 70px;
+        font-size: 2.7rem !important;
+        font-weight: 700;
+     }
+
+    .second-number,.third-number {
+        position: absolute;
+        margin-bottom: 20px;
+    }
+
+    .second-number {
+        margin-top: -2px;
+    }
+
+    .third-number {
+        right: 0;
+        margin-top: 2px;
     }
 }
 
